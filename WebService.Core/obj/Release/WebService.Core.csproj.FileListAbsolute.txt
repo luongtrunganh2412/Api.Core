@@ -1,0 +1,90 @@
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\csc.exe
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\System.Collections.Immutable.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\System.Reflection.Metadata.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\vbc.exe
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\VBCSCompiler.exe
+D:\MVC\CPCPN\api.core\WebService.Core\bin\roslyn\VBCSCompiler.exe.config
+D:\MVC\CPCPN\api.core\WebService.Core\bin\WebService.Core.dll.config
+D:\MVC\CPCPN\api.core\WebService.Core\bin\WebService.Core.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\WebService.Core.pdb
+D:\MVC\CPCPN\api.core\WebService.Core\bin\Api.Core.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Http.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Optimization.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Mvc.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Http.Cors.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\MongoDB.Bson.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\MongoDB.Driver.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Http.WebHost.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Razor.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.WebPages.Razor.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.WebPages.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Cors.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.WebPages.Deployment.dll
+D:\MVC\CPCPN\api.core\WebService.Core\bin\Api.Core.pdb
+D:\MVC\CPCPN\api.core\WebService.Core\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Http.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Optimization.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Mvc.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Http.Cors.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Http.WebHost.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.Razor.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.WebPages.Razor.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.WebPages.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\System.Web.WebPages.Deployment.xml
+D:\MVC\CPCPN\api.core\WebService.Core\bin\Api.Core.XmlSerializers.dll
+D:\MVC\CPCPN\api.core\WebService.Core\obj\Release\WebService.Core.csprojResolveAssemblyReference.cache
+D:\MVC\CPCPN\api.core\WebService.Core\obj\Release\WebService.Core.dll
+D:\MVC\CPCPN\api.core\WebService.Core\obj\Release\WebService.Core.pdb
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\csc.exe
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\System.Collections.Immutable.dll
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\System.Reflection.Metadata.dll
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\vbc.exe
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\VBCSCompiler.exe
+E:\Project EMS\api.core\WebService.Core\bin\roslyn\VBCSCompiler.exe.config
+E:\Project EMS\api.core\WebService.Core\bin\WebService.Core.dll.config
+E:\Project EMS\api.core\WebService.Core\bin\WebService.Core.dll
+E:\Project EMS\api.core\WebService.Core\bin\WebService.Core.pdb
+E:\Project EMS\api.core\WebService.Core\bin\Api.Core.dll
+E:\Project EMS\api.core\WebService.Core\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Http.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Optimization.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Mvc.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Http.Cors.dll
+E:\Project EMS\api.core\WebService.Core\bin\MongoDB.Bson.dll
+E:\Project EMS\api.core\WebService.Core\bin\MongoDB.Driver.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Http.WebHost.dll
+E:\Project EMS\api.core\WebService.Core\bin\Microsoft.Web.Infrastructure.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Razor.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.WebPages.Razor.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.WebPages.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Cors.dll
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.WebPages.Deployment.dll
+E:\Project EMS\api.core\WebService.Core\bin\Api.Core.pdb
+E:\Project EMS\api.core\WebService.Core\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Http.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Optimization.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Mvc.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Http.Cors.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Http.WebHost.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.Razor.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.WebPages.Razor.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.WebPages.xml
+E:\Project EMS\api.core\WebService.Core\bin\System.Web.WebPages.Deployment.xml
+E:\Project EMS\api.core\WebService.Core\bin\Api.Core.XmlSerializers.dll
+E:\Project EMS\api.core\WebService.Core\obj\Release\WebService.Core.csprojResolveAssemblyReference.cache
+E:\Project EMS\api.core\WebService.Core\obj\Release\WebService.Core.dll
+E:\Project EMS\api.core\WebService.Core\obj\Release\WebService.Core.pdb

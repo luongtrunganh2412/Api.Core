@@ -1,0 +1,4531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="vnpost.ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="vnpost.ws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="vnpost.ws">
+      <s:element name="GetParcelInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idBK" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParcelInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParcelInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserCredentical" type="tns:UserCredentical" />
+      <s:complexType name="UserCredentical">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetVNQInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idVNQ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVNQInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVNQInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPostInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idBP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPostInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPostInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogisticInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idBP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogisticInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLogisticInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPUDInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idBP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPUDInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPUDInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUPSInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idBP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUPSInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUPSInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParcelPackages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParcelPackagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParcelPackagesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogisticPackages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogisticPackagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLogisticPackagesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPostByList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPostByListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPostByListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParcelByList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParcelByListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParcelByListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogisticByList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogisticByListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLogisticByListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_ItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_ItemsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_By_DataCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_By_DataCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_By_DataCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_GetSendingTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_GetSendingTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_GetSendingTimeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_Public">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_PublicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_PublicResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_By_DataCode_Public">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_By_DataCode_PublicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_By_DataCode_PublicResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Batch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BatchCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_BatchResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_Arr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_ArrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_ArrResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_Arr_Location">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_Arr_LocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_Arr_LocationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_DataCode_Arr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_DataCode_ArrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_DataCode_ArrResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE_Arr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE_ArrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_OE_ArrResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BD8Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_BD8Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD10">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BD10Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD10Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_BD10Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_OEResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_MailTrip_IPS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_MailTrip_IPSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_MailTrip_IPSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_OE_NewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE_Public">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_OE_PublicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_OE_PublicResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Item_Status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Item_StatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Item_StatusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BCCP_GetTraceBySMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BCCP_GetTraceBySMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BCCP_GetTraceBySMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Order">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrderCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_OrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_OrderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Customer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_CustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_CustomerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Customer_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Customer_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Customer_NewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_by_PO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="POSCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DebtType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_by_POResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_KHL_by_POResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_Code">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_CodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_KHL_CodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetListItems_ByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetListItems_ByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KHL_GetListItems_ByCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetListResult_ByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetListResult_ByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KHL_GetListResult_ByCodeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_Code_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_Code_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_KHL_Code_NewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_Code_ByProvince">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProvinceCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_KHL_Code_ByProvinceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_KHL_Code_ByProvinceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Delivery_Items">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProvinceCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isCOD" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Delivery_ItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Delivery_ItemsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Acceptance_Items">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProvinceCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isCOD" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Acceptance_ItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Acceptance_ItemsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetTimePart_Items_Arr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetTimePart_Items_ArrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KHL_GetTimePart_Items_ArrResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetTimePart_Items_Arr_Info">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KHL_GetTimePart_Items_Arr_InfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KHL_GetTimePart_Items_Arr_InfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_UAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_UATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_UATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_By_DataCode_UAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_By_DataCode_UATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_By_DataCode_UATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_GetSendingTime_UAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Items_GetSendingTime_UATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Items_GetSendingTime_UATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Batch_UAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BatchCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_Batch_UATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_Batch_UATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD8_UAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BD8Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD8_UATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_BD8_UATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD10_UAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BD10Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackAndTrace_BD10_UATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackAndTrace_BD10_UATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetParcelInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParcelInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParcelInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelInfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVNQInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVNQInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPostInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPostInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLogisticInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLogisticInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPUDInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPUDInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUPSInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUPSInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParcelPackages" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParcelPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLogisticPackages" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLogisticPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetPostByListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPostByList" />
+  </wsdl:message>
+  <wsdl:message name="GetPostByListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPostByListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelByListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParcelByList" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelByListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParcelByListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticByListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLogisticByList" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticByListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLogisticByListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_ItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_By_DataCode" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_By_DataCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_GetSendingTime" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_GetSendingTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_Public" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_PublicResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_By_DataCode_Public" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_By_DataCode_PublicResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Batch" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_Arr" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_ArrResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_Arr_Location" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_Arr_LocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_DataCode_Arr" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_DataCode_ArrResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE_Arr" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE_ArrResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8SoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD8" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8SoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD8Response" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8UserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10SoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD10" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10SoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD10Response" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10UserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OESoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OESoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OEResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OEUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_MailTrip_IPS" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_MailTrip_IPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE_New" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE_Public" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_OE_PublicResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Item_Status" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Item_StatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSSoapIn">
+    <wsdl:part name="parameters" element="tns:BCCP_GetTraceBySMS" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSSoapOut">
+    <wsdl:part name="parameters" element="tns:BCCP_GetTraceBySMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Order" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_OrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Customer" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_CustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Customer_New" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Customer_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_by_PO" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_by_POResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_Code" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_CodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:KHL_GetListItems_ByCode" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:KHL_GetListItems_ByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:KHL_GetListResult_ByCode" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:KHL_GetListResult_ByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_Code_New" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_Code_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_Code_ByProvince" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_KHL_Code_ByProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Delivery_Items" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Delivery_ItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Acceptance_Items" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Acceptance_ItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrSoapIn">
+    <wsdl:part name="parameters" element="tns:KHL_GetTimePart_Items_Arr" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrSoapOut">
+    <wsdl:part name="parameters" element="tns:KHL_GetTimePart_Items_ArrResponse" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoSoapIn">
+    <wsdl:part name="parameters" element="tns:KHL_GetTimePart_Items_Arr_Info" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoSoapOut">
+    <wsdl:part name="parameters" element="tns:KHL_GetTimePart_Items_Arr_InfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_UAT" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_UATResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_By_DataCode_UAT" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_By_DataCode_UATResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_GetSendingTime_UAT" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Items_GetSendingTime_UATResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Batch_UAT" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_Batch_UATResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD8_UAT" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD8_UATResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD10_UAT" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackAndTrace_BD10_UATResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATUserCredentical">
+    <wsdl:part name="UserCredentical" element="tns:UserCredentical" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelInfoHttpGetIn">
+    <wsdl:part name="idBK" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoHttpGetIn">
+    <wsdl:part name="idVNQ" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoHttpGetIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoHttpGetIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoHttpGetIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoHttpGetIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPostByListHttpGetIn">
+    <wsdl:part name="listId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPostByListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelByListHttpGetIn">
+    <wsdl:part name="listId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelByListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticByListHttpGetIn">
+    <wsdl:part name="listId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticByListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeHttpGetIn">
+    <wsdl:part name="DataCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchHttpGetIn">
+    <wsdl:part name="BatchCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrHttpGetIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationHttpGetIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrHttpGetIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrHttpGetIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8HttpGetIn">
+    <wsdl:part name="BD8Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10HttpGetIn">
+    <wsdl:part name="BD10Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OEHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OEHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderHttpGetIn">
+    <wsdl:part name="OrderCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POHttpGetIn">
+    <wsdl:part name="POSCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="DebtType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceHttpGetIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ProvinceCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsHttpGetIn">
+    <wsdl:part name="ProvinceCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="isCOD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsHttpGetIn">
+    <wsdl:part name="ProvinceCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="isCOD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrHttpGetIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoHttpGetIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATHttpGetIn">
+    <wsdl:part name="DataCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATHttpGetIn">
+    <wsdl:part name="BatchCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATHttpGetIn">
+    <wsdl:part name="BD8Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATHttpGetIn">
+    <wsdl:part name="BD10Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelInfoHttpPostIn">
+    <wsdl:part name="idBK" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoHttpPostIn">
+    <wsdl:part name="idVNQ" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetVNQInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoHttpPostIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPostInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoHttpPostIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoHttpPostIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPUDInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoHttpPostIn">
+    <wsdl:part name="idBP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUPSInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelPackagesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesHttpPostIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticPackagesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPostByListHttpPostIn">
+    <wsdl:part name="listId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPostByListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelByListHttpPostIn">
+    <wsdl:part name="listId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetParcelByListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticByListHttpPostIn">
+    <wsdl:part name="listId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogisticByListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_ItemsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeHttpPostIn">
+    <wsdl:part name="DataCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_PublicHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_PublicHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchHttpPostIn">
+    <wsdl:part name="BatchCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BatchHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrHttpPostIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_ArrHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationHttpPostIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_Arr_LocationHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrHttpPostIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_DataCode_ArrHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrHttpPostIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_ArrHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8HttpPostIn">
+    <wsdl:part name="BD8Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10HttpPostIn">
+    <wsdl:part name="BD10Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OEHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OEHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_MailTrip_IPSHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_NewHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_OE_PublicHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Item_StatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="BCCP_GetTraceBySMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderHttpPostIn">
+    <wsdl:part name="OrderCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_OrderHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_CustomerHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Customer_NewHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POHttpPostIn">
+    <wsdl:part name="POSCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="DebtType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_by_POHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_CodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListItems_ByCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetListResult_ByCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_NewHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceHttpPostIn">
+    <wsdl:part name="CustomerCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ProvinceCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_KHL_Code_ByProvinceHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsHttpPostIn">
+    <wsdl:part name="ProvinceCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="isCOD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Delivery_ItemsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsHttpPostIn">
+    <wsdl:part name="ProvinceCode" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="isCOD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Acceptance_ItemsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrHttpPostIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_ArrHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoHttpPostIn">
+    <wsdl:part name="arrItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KHL_GetTimePart_Items_Arr_InfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_UATHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATHttpPostIn">
+    <wsdl:part name="DataCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_By_DataCode_UATHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Items_GetSendingTime_UATHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATHttpPostIn">
+    <wsdl:part name="BatchCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_Batch_UATHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATHttpPostIn">
+    <wsdl:part name="BD8Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD8_UATHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATHttpPostIn">
+    <wsdl:part name="BD10Code" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TrackAndTrace_BD10_UATHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="TrackAndTraceSoap">
+    <wsdl:operation name="GetParcelInfo">
+      <wsdl:input message="tns:GetParcelInfoSoapIn" />
+      <wsdl:output message="tns:GetParcelInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <wsdl:input message="tns:GetVNQInfoSoapIn" />
+      <wsdl:output message="tns:GetVNQInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <wsdl:input message="tns:GetPostInfoSoapIn" />
+      <wsdl:output message="tns:GetPostInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <wsdl:input message="tns:GetLogisticInfoSoapIn" />
+      <wsdl:output message="tns:GetLogisticInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <wsdl:input message="tns:GetPUDInfoSoapIn" />
+      <wsdl:output message="tns:GetPUDInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <wsdl:input message="tns:GetUPSInfoSoapIn" />
+      <wsdl:output message="tns:GetUPSInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <wsdl:input message="tns:GetParcelPackagesSoapIn" />
+      <wsdl:output message="tns:GetParcelPackagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <wsdl:input message="tns:GetLogisticPackagesSoapIn" />
+      <wsdl:output message="tns:GetLogisticPackagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <wsdl:input message="tns:GetPostByListSoapIn" />
+      <wsdl:output message="tns:GetPostByListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <wsdl:input message="tns:GetParcelByListSoapIn" />
+      <wsdl:output message="tns:GetParcelByListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <wsdl:input message="tns:GetLogisticByListSoapIn" />
+      <wsdl:output message="tns:GetLogisticByListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <wsdl:input message="tns:TrackAndTrace_ItemsSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_ItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCodeSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <wsdl:input message="tns:TrackAndTrace_Items_GetSendingTimeSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_GetSendingTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_PublicSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_PublicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCode_PublicSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCode_PublicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <wsdl:input message="tns:TrackAndTrace_BatchSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_BatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <wsdl:input message="tns:TrackAndTrace_Items_ArrSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_ArrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <wsdl:input message="tns:TrackAndTrace_Items_Arr_LocationSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_Arr_LocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <wsdl:input message="tns:TrackAndTrace_DataCode_ArrSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_DataCode_ArrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_ArrSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_ArrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <wsdl:input message="tns:TrackAndTrace_BD8SoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <wsdl:input message="tns:TrackAndTrace_BD10SoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD10SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <wsdl:input message="tns:TrackAndTrace_Items_OESoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <wsdl:input message="tns:TrackAndTrace_Items_MailTrip_IPSSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_MailTrip_IPSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_NewSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_PublicSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_PublicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <wsdl:input message="tns:TrackAndTrace_Item_StatusSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Item_StatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <wsdl:input message="tns:BCCP_GetTraceBySMSSoapIn" />
+      <wsdl:output message="tns:BCCP_GetTraceBySMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <wsdl:input message="tns:TrackAndTrace_OrderSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_OrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <wsdl:input message="tns:TrackAndTrace_CustomerSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_CustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <wsdl:input message="tns:TrackAndTrace_Customer_NewSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Customer_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <wsdl:input message="tns:TrackAndTrace_KHL_by_POSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_by_POSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <wsdl:input message="tns:TrackAndTrace_KHL_CodeSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_CodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <wsdl:input message="tns:KHL_GetListItems_ByCodeSoapIn" />
+      <wsdl:output message="tns:KHL_GetListItems_ByCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <wsdl:input message="tns:KHL_GetListResult_ByCodeSoapIn" />
+      <wsdl:output message="tns:KHL_GetListResult_ByCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <wsdl:input message="tns:TrackAndTrace_KHL_Code_NewSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_Code_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <wsdl:input message="tns:TrackAndTrace_KHL_Code_ByProvinceSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_Code_ByProvinceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <wsdl:input message="tns:TrackAndTrace_Delivery_ItemsSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Delivery_ItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <wsdl:input message="tns:TrackAndTrace_Acceptance_ItemsSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Acceptance_ItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <wsdl:input message="tns:KHL_GetTimePart_Items_ArrSoapIn" />
+      <wsdl:output message="tns:KHL_GetTimePart_Items_ArrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <wsdl:input message="tns:KHL_GetTimePart_Items_Arr_InfoSoapIn" />
+      <wsdl:output message="tns:KHL_GetTimePart_Items_Arr_InfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_UATSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_UATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCode_UATSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCode_UATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_GetSendingTime_UATSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_GetSendingTime_UATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Batch_UATSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_Batch_UATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <wsdl:input message="tns:TrackAndTrace_BD8_UATSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD8_UATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <wsdl:input message="tns:TrackAndTrace_BD10_UATSoapIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD10_UATSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TrackAndTraceHttpGet">
+    <wsdl:operation name="GetParcelInfo">
+      <wsdl:input message="tns:GetParcelInfoHttpGetIn" />
+      <wsdl:output message="tns:GetParcelInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <wsdl:input message="tns:GetVNQInfoHttpGetIn" />
+      <wsdl:output message="tns:GetVNQInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <wsdl:input message="tns:GetPostInfoHttpGetIn" />
+      <wsdl:output message="tns:GetPostInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <wsdl:input message="tns:GetLogisticInfoHttpGetIn" />
+      <wsdl:output message="tns:GetLogisticInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <wsdl:input message="tns:GetPUDInfoHttpGetIn" />
+      <wsdl:output message="tns:GetPUDInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <wsdl:input message="tns:GetUPSInfoHttpGetIn" />
+      <wsdl:output message="tns:GetUPSInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <wsdl:input message="tns:GetParcelPackagesHttpGetIn" />
+      <wsdl:output message="tns:GetParcelPackagesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <wsdl:input message="tns:GetLogisticPackagesHttpGetIn" />
+      <wsdl:output message="tns:GetLogisticPackagesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <wsdl:input message="tns:GetPostByListHttpGetIn" />
+      <wsdl:output message="tns:GetPostByListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <wsdl:input message="tns:GetParcelByListHttpGetIn" />
+      <wsdl:output message="tns:GetParcelByListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <wsdl:input message="tns:GetLogisticByListHttpGetIn" />
+      <wsdl:output message="tns:GetLogisticByListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <wsdl:input message="tns:TrackAndTrace_ItemsHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_ItemsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCodeHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <wsdl:input message="tns:TrackAndTrace_Items_GetSendingTimeHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_GetSendingTimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_PublicHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_PublicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCode_PublicHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCode_PublicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <wsdl:input message="tns:TrackAndTrace_BatchHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_BatchHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <wsdl:input message="tns:TrackAndTrace_Items_ArrHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_ArrHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <wsdl:input message="tns:TrackAndTrace_Items_Arr_LocationHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_Arr_LocationHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <wsdl:input message="tns:TrackAndTrace_DataCode_ArrHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_DataCode_ArrHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_ArrHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_ArrHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <wsdl:input message="tns:TrackAndTrace_BD8HttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD8HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <wsdl:input message="tns:TrackAndTrace_BD10HttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD10HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <wsdl:input message="tns:TrackAndTrace_Items_OEHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <wsdl:input message="tns:TrackAndTrace_Items_MailTrip_IPSHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_MailTrip_IPSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_NewHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_NewHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_PublicHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_PublicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <wsdl:input message="tns:TrackAndTrace_Item_StatusHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Item_StatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <wsdl:input message="tns:BCCP_GetTraceBySMSHttpGetIn" />
+      <wsdl:output message="tns:BCCP_GetTraceBySMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <wsdl:input message="tns:TrackAndTrace_OrderHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_OrderHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <wsdl:input message="tns:TrackAndTrace_CustomerHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_CustomerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <wsdl:input message="tns:TrackAndTrace_Customer_NewHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Customer_NewHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <wsdl:input message="tns:TrackAndTrace_KHL_by_POHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_by_POHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <wsdl:input message="tns:TrackAndTrace_KHL_CodeHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_CodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <wsdl:input message="tns:KHL_GetListItems_ByCodeHttpGetIn" />
+      <wsdl:output message="tns:KHL_GetListItems_ByCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <wsdl:input message="tns:KHL_GetListResult_ByCodeHttpGetIn" />
+      <wsdl:output message="tns:KHL_GetListResult_ByCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <wsdl:input message="tns:TrackAndTrace_KHL_Code_NewHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_Code_NewHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <wsdl:input message="tns:TrackAndTrace_KHL_Code_ByProvinceHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_Code_ByProvinceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <wsdl:input message="tns:TrackAndTrace_Delivery_ItemsHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Delivery_ItemsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <wsdl:input message="tns:TrackAndTrace_Acceptance_ItemsHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Acceptance_ItemsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <wsdl:input message="tns:KHL_GetTimePart_Items_ArrHttpGetIn" />
+      <wsdl:output message="tns:KHL_GetTimePart_Items_ArrHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <wsdl:input message="tns:KHL_GetTimePart_Items_Arr_InfoHttpGetIn" />
+      <wsdl:output message="tns:KHL_GetTimePart_Items_Arr_InfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_UATHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_UATHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCode_UATHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCode_UATHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_GetSendingTime_UATHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_GetSendingTime_UATHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Batch_UATHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_Batch_UATHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <wsdl:input message="tns:TrackAndTrace_BD8_UATHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD8_UATHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <wsdl:input message="tns:TrackAndTrace_BD10_UATHttpGetIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD10_UATHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TrackAndTraceHttpPost">
+    <wsdl:operation name="GetParcelInfo">
+      <wsdl:input message="tns:GetParcelInfoHttpPostIn" />
+      <wsdl:output message="tns:GetParcelInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <wsdl:input message="tns:GetVNQInfoHttpPostIn" />
+      <wsdl:output message="tns:GetVNQInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <wsdl:input message="tns:GetPostInfoHttpPostIn" />
+      <wsdl:output message="tns:GetPostInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <wsdl:input message="tns:GetLogisticInfoHttpPostIn" />
+      <wsdl:output message="tns:GetLogisticInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <wsdl:input message="tns:GetPUDInfoHttpPostIn" />
+      <wsdl:output message="tns:GetPUDInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <wsdl:input message="tns:GetUPSInfoHttpPostIn" />
+      <wsdl:output message="tns:GetUPSInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <wsdl:input message="tns:GetParcelPackagesHttpPostIn" />
+      <wsdl:output message="tns:GetParcelPackagesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <wsdl:input message="tns:GetLogisticPackagesHttpPostIn" />
+      <wsdl:output message="tns:GetLogisticPackagesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <wsdl:input message="tns:GetPostByListHttpPostIn" />
+      <wsdl:output message="tns:GetPostByListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <wsdl:input message="tns:GetParcelByListHttpPostIn" />
+      <wsdl:output message="tns:GetParcelByListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <wsdl:input message="tns:GetLogisticByListHttpPostIn" />
+      <wsdl:output message="tns:GetLogisticByListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <wsdl:input message="tns:TrackAndTrace_ItemsHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_ItemsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCodeHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <wsdl:input message="tns:TrackAndTrace_Items_GetSendingTimeHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_GetSendingTimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_PublicHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_PublicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCode_PublicHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCode_PublicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <wsdl:input message="tns:TrackAndTrace_BatchHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_BatchHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <wsdl:input message="tns:TrackAndTrace_Items_ArrHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_ArrHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <wsdl:input message="tns:TrackAndTrace_Items_Arr_LocationHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_Arr_LocationHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <wsdl:input message="tns:TrackAndTrace_DataCode_ArrHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_DataCode_ArrHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_ArrHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_ArrHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <wsdl:input message="tns:TrackAndTrace_BD8HttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD8HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <wsdl:input message="tns:TrackAndTrace_BD10HttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD10HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <wsdl:input message="tns:TrackAndTrace_Items_OEHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <wsdl:input message="tns:TrackAndTrace_Items_MailTrip_IPSHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_MailTrip_IPSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_NewHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_NewHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <wsdl:input message="tns:TrackAndTrace_Items_OE_PublicHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_OE_PublicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <wsdl:input message="tns:TrackAndTrace_Item_StatusHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Item_StatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <wsdl:input message="tns:BCCP_GetTraceBySMSHttpPostIn" />
+      <wsdl:output message="tns:BCCP_GetTraceBySMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <wsdl:input message="tns:TrackAndTrace_OrderHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_OrderHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <wsdl:input message="tns:TrackAndTrace_CustomerHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_CustomerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <wsdl:input message="tns:TrackAndTrace_Customer_NewHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Customer_NewHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <wsdl:input message="tns:TrackAndTrace_KHL_by_POHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_by_POHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <wsdl:input message="tns:TrackAndTrace_KHL_CodeHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_CodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <wsdl:input message="tns:KHL_GetListItems_ByCodeHttpPostIn" />
+      <wsdl:output message="tns:KHL_GetListItems_ByCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <wsdl:input message="tns:KHL_GetListResult_ByCodeHttpPostIn" />
+      <wsdl:output message="tns:KHL_GetListResult_ByCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <wsdl:input message="tns:TrackAndTrace_KHL_Code_NewHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_Code_NewHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <wsdl:input message="tns:TrackAndTrace_KHL_Code_ByProvinceHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_KHL_Code_ByProvinceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <wsdl:input message="tns:TrackAndTrace_Delivery_ItemsHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Delivery_ItemsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <wsdl:input message="tns:TrackAndTrace_Acceptance_ItemsHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Acceptance_ItemsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <wsdl:input message="tns:KHL_GetTimePart_Items_ArrHttpPostIn" />
+      <wsdl:output message="tns:KHL_GetTimePart_Items_ArrHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <wsdl:input message="tns:KHL_GetTimePart_Items_Arr_InfoHttpPostIn" />
+      <wsdl:output message="tns:KHL_GetTimePart_Items_Arr_InfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_UATHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_UATHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_By_DataCode_UATHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_By_DataCode_UATHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Items_GetSendingTime_UATHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Items_GetSendingTime_UATHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <wsdl:input message="tns:TrackAndTrace_Batch_UATHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_Batch_UATHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <wsdl:input message="tns:TrackAndTrace_BD8_UATHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD8_UATHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <wsdl:input message="tns:TrackAndTrace_BD10_UATHttpPostIn" />
+      <wsdl:output message="tns:TrackAndTrace_BD10_UATHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TrackAndTraceSoap" type="tns:TrackAndTraceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetParcelInfo">
+      <soap:operation soapAction="vnpost.ws/GetParcelInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetParcelInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <soap:operation soapAction="vnpost.ws/GetVNQInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetVNQInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <soap:operation soapAction="vnpost.ws/GetPostInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPostInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <soap:operation soapAction="vnpost.ws/GetLogisticInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetLogisticInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <soap:operation soapAction="vnpost.ws/GetPUDInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPUDInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <soap:operation soapAction="vnpost.ws/GetUPSInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetUPSInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <soap:operation soapAction="vnpost.ws/GetParcelPackages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetParcelPackagesUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <soap:operation soapAction="vnpost.ws/GetLogisticPackages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetLogisticPackagesUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <soap:operation soapAction="vnpost.ws/GetPostByList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <soap:operation soapAction="vnpost.ws/GetParcelByList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <soap:operation soapAction="vnpost.ws/GetLogisticByList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_ItemsUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_By_DataCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_By_DataCodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_GetSendingTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_GetSendingTimeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_Public" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_PublicUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_By_DataCode_Public" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_By_DataCode_PublicUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Batch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_BatchUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_Arr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_Arr_Location" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_Arr_LocationUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_DataCode_Arr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_DataCode_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE_Arr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_OE_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_BD8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_BD8UserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_BD10" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_BD10UserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_OEUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_MailTrip_IPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_MailTrip_IPSUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_OE_NewUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE_Public" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_OE_PublicUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Item_Status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Item_StatusUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <soap:operation soapAction="vnpost.ws/BCCP_GetTraceBySMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BCCP_GetTraceBySMSUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Order" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_OrderUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Customer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_CustomerUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Customer_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Customer_NewUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_KHL_by_PO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_KHL_by_POUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_KHL_Code" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_KHL_CodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <soap:operation soapAction="vnpost.ws/KHL_GetListItems_ByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:KHL_GetListItems_ByCodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <soap:operation soapAction="vnpost.ws/KHL_GetListResult_ByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:KHL_GetListResult_ByCodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_KHL_Code_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_KHL_Code_NewUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_KHL_Code_ByProvince" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_KHL_Code_ByProvinceUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Delivery_Items" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Delivery_ItemsUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Acceptance_Items" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Acceptance_ItemsUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <soap:operation soapAction="vnpost.ws/KHL_GetTimePart_Items_Arr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:KHL_GetTimePart_Items_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <soap:operation soapAction="vnpost.ws/KHL_GetTimePart_Items_Arr_Info" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:KHL_GetTimePart_Items_Arr_InfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_UAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_By_DataCode_UAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_By_DataCode_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Items_GetSendingTime_UAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Items_GetSendingTime_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_Batch_UAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_Batch_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_BD8_UAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_BD8_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <soap:operation soapAction="vnpost.ws/TrackAndTrace_BD10_UAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackAndTrace_BD10_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrackAndTraceSoap12" type="tns:TrackAndTraceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetParcelInfo">
+      <soap12:operation soapAction="vnpost.ws/GetParcelInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetParcelInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <soap12:operation soapAction="vnpost.ws/GetVNQInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetVNQInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <soap12:operation soapAction="vnpost.ws/GetPostInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPostInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <soap12:operation soapAction="vnpost.ws/GetLogisticInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetLogisticInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <soap12:operation soapAction="vnpost.ws/GetPUDInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPUDInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <soap12:operation soapAction="vnpost.ws/GetUPSInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetUPSInfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <soap12:operation soapAction="vnpost.ws/GetParcelPackages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetParcelPackagesUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <soap12:operation soapAction="vnpost.ws/GetLogisticPackages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetLogisticPackagesUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <soap12:operation soapAction="vnpost.ws/GetPostByList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <soap12:operation soapAction="vnpost.ws/GetParcelByList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <soap12:operation soapAction="vnpost.ws/GetLogisticByList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_ItemsUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_By_DataCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_By_DataCodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_GetSendingTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_GetSendingTimeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_Public" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_PublicUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_By_DataCode_Public" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_By_DataCode_PublicUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Batch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_BatchUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_Arr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_Arr_Location" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_Arr_LocationUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_DataCode_Arr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_DataCode_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE_Arr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_OE_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_BD8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_BD8UserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_BD10" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_BD10UserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_OEUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_MailTrip_IPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_MailTrip_IPSUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_OE_NewUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_OE_Public" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_OE_PublicUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Item_Status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Item_StatusUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <soap12:operation soapAction="vnpost.ws/BCCP_GetTraceBySMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BCCP_GetTraceBySMSUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Order" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_OrderUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Customer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_CustomerUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Customer_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Customer_NewUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_KHL_by_PO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_KHL_by_POUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_KHL_Code" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_KHL_CodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <soap12:operation soapAction="vnpost.ws/KHL_GetListItems_ByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:KHL_GetListItems_ByCodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <soap12:operation soapAction="vnpost.ws/KHL_GetListResult_ByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:KHL_GetListResult_ByCodeUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_KHL_Code_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_KHL_Code_NewUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_KHL_Code_ByProvince" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_KHL_Code_ByProvinceUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Delivery_Items" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Delivery_ItemsUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Acceptance_Items" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Acceptance_ItemsUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <soap12:operation soapAction="vnpost.ws/KHL_GetTimePart_Items_Arr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:KHL_GetTimePart_Items_ArrUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <soap12:operation soapAction="vnpost.ws/KHL_GetTimePart_Items_Arr_Info" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:KHL_GetTimePart_Items_Arr_InfoUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_UAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_By_DataCode_UAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_By_DataCode_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Items_GetSendingTime_UAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Items_GetSendingTime_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_Batch_UAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_Batch_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_BD8_UAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_BD8_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <soap12:operation soapAction="vnpost.ws/TrackAndTrace_BD10_UAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackAndTrace_BD10_UATUserCredentical" part="UserCredentical" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrackAndTraceHttpGet" type="tns:TrackAndTraceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetParcelInfo">
+      <http:operation location="/GetParcelInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <http:operation location="/GetVNQInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <http:operation location="/GetPostInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <http:operation location="/GetLogisticInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <http:operation location="/GetPUDInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <http:operation location="/GetUPSInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <http:operation location="/GetParcelPackages" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <http:operation location="/GetLogisticPackages" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <http:operation location="/GetPostByList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <http:operation location="/GetParcelByList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <http:operation location="/GetLogisticByList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <http:operation location="/TrackAndTrace_Items" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <http:operation location="/TrackAndTrace_Items_By_DataCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <http:operation location="/TrackAndTrace_Items_GetSendingTime" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <http:operation location="/TrackAndTrace_Items_Public" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <http:operation location="/TrackAndTrace_Items_By_DataCode_Public" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <http:operation location="/TrackAndTrace_Batch" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <http:operation location="/TrackAndTrace_Items_Arr" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <http:operation location="/TrackAndTrace_Items_Arr_Location" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <http:operation location="/TrackAndTrace_DataCode_Arr" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <http:operation location="/TrackAndTrace_Items_OE_Arr" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <http:operation location="/TrackAndTrace_BD8" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <http:operation location="/TrackAndTrace_BD10" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <http:operation location="/TrackAndTrace_Items_OE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <http:operation location="/TrackAndTrace_Items_MailTrip_IPS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <http:operation location="/TrackAndTrace_Items_OE_New" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <http:operation location="/TrackAndTrace_Items_OE_Public" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <http:operation location="/TrackAndTrace_Item_Status" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <http:operation location="/BCCP_GetTraceBySMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <http:operation location="/TrackAndTrace_Order" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <http:operation location="/TrackAndTrace_Customer" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <http:operation location="/TrackAndTrace_Customer_New" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <http:operation location="/TrackAndTrace_KHL_by_PO" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <http:operation location="/TrackAndTrace_KHL_Code" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <http:operation location="/KHL_GetListItems_ByCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <http:operation location="/KHL_GetListResult_ByCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <http:operation location="/TrackAndTrace_KHL_Code_New" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <http:operation location="/TrackAndTrace_KHL_Code_ByProvince" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <http:operation location="/TrackAndTrace_Delivery_Items" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <http:operation location="/TrackAndTrace_Acceptance_Items" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <http:operation location="/KHL_GetTimePart_Items_Arr" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <http:operation location="/KHL_GetTimePart_Items_Arr_Info" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <http:operation location="/TrackAndTrace_Items_UAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <http:operation location="/TrackAndTrace_Items_By_DataCode_UAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <http:operation location="/TrackAndTrace_Items_GetSendingTime_UAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <http:operation location="/TrackAndTrace_Batch_UAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <http:operation location="/TrackAndTrace_BD8_UAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <http:operation location="/TrackAndTrace_BD10_UAT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrackAndTraceHttpPost" type="tns:TrackAndTraceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetParcelInfo">
+      <http:operation location="/GetParcelInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVNQInfo">
+      <http:operation location="/GetVNQInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostInfo">
+      <http:operation location="/GetPostInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticInfo">
+      <http:operation location="/GetLogisticInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPUDInfo">
+      <http:operation location="/GetPUDInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUPSInfo">
+      <http:operation location="/GetUPSInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelPackages">
+      <http:operation location="/GetParcelPackages" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticPackages">
+      <http:operation location="/GetLogisticPackages" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPostByList">
+      <http:operation location="/GetPostByList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParcelByList">
+      <http:operation location="/GetParcelByList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogisticByList">
+      <http:operation location="/GetLogisticByList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items">
+      <http:operation location="/TrackAndTrace_Items" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode">
+      <http:operation location="/TrackAndTrace_Items_By_DataCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime">
+      <http:operation location="/TrackAndTrace_Items_GetSendingTime" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Public">
+      <http:operation location="/TrackAndTrace_Items_Public" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_Public">
+      <http:operation location="/TrackAndTrace_Items_By_DataCode_Public" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch">
+      <http:operation location="/TrackAndTrace_Batch" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr">
+      <http:operation location="/TrackAndTrace_Items_Arr" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_Arr_Location">
+      <http:operation location="/TrackAndTrace_Items_Arr_Location" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_DataCode_Arr">
+      <http:operation location="/TrackAndTrace_DataCode_Arr" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Arr">
+      <http:operation location="/TrackAndTrace_Items_OE_Arr" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8">
+      <http:operation location="/TrackAndTrace_BD8" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10">
+      <http:operation location="/TrackAndTrace_BD10" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE">
+      <http:operation location="/TrackAndTrace_Items_OE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_MailTrip_IPS">
+      <http:operation location="/TrackAndTrace_Items_MailTrip_IPS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_New">
+      <http:operation location="/TrackAndTrace_Items_OE_New" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_OE_Public">
+      <http:operation location="/TrackAndTrace_Items_OE_Public" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Item_Status">
+      <http:operation location="/TrackAndTrace_Item_Status" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BCCP_GetTraceBySMS">
+      <http:operation location="/BCCP_GetTraceBySMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Order">
+      <http:operation location="/TrackAndTrace_Order" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer">
+      <http:operation location="/TrackAndTrace_Customer" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Customer_New">
+      <http:operation location="/TrackAndTrace_Customer_New" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_by_PO">
+      <http:operation location="/TrackAndTrace_KHL_by_PO" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code">
+      <http:operation location="/TrackAndTrace_KHL_Code" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListItems_ByCode">
+      <http:operation location="/KHL_GetListItems_ByCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetListResult_ByCode">
+      <http:operation location="/KHL_GetListResult_ByCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_New">
+      <http:operation location="/TrackAndTrace_KHL_Code_New" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_KHL_Code_ByProvince">
+      <http:operation location="/TrackAndTrace_KHL_Code_ByProvince" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Delivery_Items">
+      <http:operation location="/TrackAndTrace_Delivery_Items" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Acceptance_Items">
+      <http:operation location="/TrackAndTrace_Acceptance_Items" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr">
+      <http:operation location="/KHL_GetTimePart_Items_Arr" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KHL_GetTimePart_Items_Arr_Info">
+      <http:operation location="/KHL_GetTimePart_Items_Arr_Info" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_UAT">
+      <http:operation location="/TrackAndTrace_Items_UAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_By_DataCode_UAT">
+      <http:operation location="/TrackAndTrace_Items_By_DataCode_UAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Items_GetSendingTime_UAT">
+      <http:operation location="/TrackAndTrace_Items_GetSendingTime_UAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_Batch_UAT">
+      <http:operation location="/TrackAndTrace_Batch_UAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD8_UAT">
+      <http:operation location="/TrackAndTrace_BD8_UAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackAndTrace_BD10_UAT">
+      <http:operation location="/TrackAndTrace_BD10_UAT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TrackAndTrace">
+    <wsdl:port name="TrackAndTraceSoap" binding="tns:TrackAndTraceSoap">
+      <soap:address location="http://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrackAndTraceSoap12" binding="tns:TrackAndTraceSoap12">
+      <soap12:address location="http://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrackAndTraceHttpGet" binding="tns:TrackAndTraceHttpGet">
+      <http:address location="http://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrackAndTraceHttpPost" binding="tns:TrackAndTraceHttpPost">
+      <http:address location="http://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

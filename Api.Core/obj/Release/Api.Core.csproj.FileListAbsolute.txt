@@ -1,0 +1,80 @@
+D:\MVC\CPCPN\api.core\Api.Core\bin\Api.Core.dll.config
+D:\MVC\CPCPN\api.core\Api.Core\bin\Api.Core.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\Api.Core.XmlSerializers.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\Api.Core.pdb
+D:\MVC\CPCPN\api.core\Api.Core\bin\Antlr3.Runtime.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\Newtonsoft.Json.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\Oracle.ManagedDataAccess.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Net.Http.Formatting.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Helpers.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Http.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Http.WebHost.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Mvc.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Mvc.Extensions.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Optimization.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Razor.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.WebPages.Deployment.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.WebPages.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.WebPages.Razor.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\WebGrease.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Mvc.Extensions.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\Newtonsoft.Json.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Net.Http.Formatting.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Helpers.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Http.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Http.WebHost.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Mvc.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Optimization.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Razor.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.WebPages.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.WebPages.Deployment.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.WebPages.Razor.xml
+D:\MVC\CPCPN\api.core\Api.Core\bin\Antlr3.Runtime.pdb
+D:\MVC\CPCPN\api.core\Api.Core\obj\Release\Api.Core.csprojResolveAssemblyReference.cache
+D:\MVC\CPCPN\api.core\Api.Core\obj\Release\Api.Core.dll
+D:\MVC\CPCPN\api.core\Api.Core\obj\Release\Api.Core.pdb
+D:\MVC\CPCPN\api.core\Api.Core\obj\Release\Api.Core.XmlSerializers.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Cors.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Http.Cors.dll
+D:\MVC\CPCPN\api.core\Api.Core\bin\System.Web.Http.Cors.xml
+E:\Project EMS\api.core\Api.Core\bin\Api.Core.dll.config
+E:\Project EMS\api.core\Api.Core\bin\Api.Core.dll
+E:\Project EMS\api.core\Api.Core\bin\Api.Core.XmlSerializers.dll
+E:\Project EMS\api.core\Api.Core\bin\Api.Core.pdb
+E:\Project EMS\api.core\Api.Core\bin\Antlr3.Runtime.dll
+E:\Project EMS\api.core\Api.Core\bin\Microsoft.Web.Infrastructure.dll
+E:\Project EMS\api.core\Api.Core\bin\Newtonsoft.Json.dll
+E:\Project EMS\api.core\Api.Core\bin\Oracle.ManagedDataAccess.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Net.Http.Formatting.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Cors.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Helpers.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Http.Cors.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Http.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Http.WebHost.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Mvc.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Mvc.Extensions.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Optimization.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Razor.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.WebPages.Deployment.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.WebPages.dll
+E:\Project EMS\api.core\Api.Core\bin\System.Web.WebPages.Razor.dll
+E:\Project EMS\api.core\Api.Core\bin\WebGrease.dll
+E:\Project EMS\api.core\Api.Core\bin\Newtonsoft.Json.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Net.Http.Formatting.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Http.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Http.Cors.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Http.WebHost.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Mvc.Extensions.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Helpers.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Mvc.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Optimization.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.Razor.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.WebPages.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.WebPages.Deployment.xml
+E:\Project EMS\api.core\Api.Core\bin\System.Web.WebPages.Razor.xml
+E:\Project EMS\api.core\Api.Core\bin\Antlr3.Runtime.pdb
+E:\Project EMS\api.core\Api.Core\obj\Release\Api.Core.csprojResolveAssemblyReference.cache
+E:\Project EMS\api.core\Api.Core\obj\Release\Api.Core.dll
+E:\Project EMS\api.core\Api.Core\obj\Release\Api.Core.pdb
+E:\Project EMS\api.core\Api.Core\obj\Release\Api.Core.XmlSerializers.dll

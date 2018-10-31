@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestService_vn_vnpost_ws_TrackAndTrace" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ws.vnpost.vn/TrackAndTrace/TrackAndTrace.asmx</Value>
+    </Setting>
+    <Setting Name="TestService_cod_svc_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://172.16.254.9:87/Service.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,163 @@
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\csc.exe
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\System.Collections.Immutable.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\System.Reflection.Metadata.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\vbc.exe
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\VBCSCompiler.exe
+D:\MVC\CPCPN\api.core\Api.App\bin\roslyn\VBCSCompiler.exe.config
+D:\MVC\CPCPN\api.core\Api.App\bin\Api.App.dll.config
+D:\MVC\CPCPN\api.core\Api.App\bin\Api.App.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Api.App.pdb
+D:\MVC\CPCPN\api.core\Api.App\bin\Antlr3.Runtime.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Common.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\EntityFramework.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\EntityFramework.SqlServer.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Google.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Newtonsoft.Json.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Owin.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Net.Http.Formatting.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Cors.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Helpers.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.Cors.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.Owin.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.WebHost.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Mvc.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Optimization.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Razor.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.WebPages.Deployment.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.WebPages.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.WebPages.Razor.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\WebGrease.dll
+D:\MVC\CPCPN\api.core\Api.App\bin\Common.pdb
+D:\MVC\CPCPN\api.core\Api.App\bin\EntityFramework.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\EntityFramework.SqlServer.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Net.Http.Formatting.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.Cors.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Newtonsoft.Json.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Helpers.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.WebHost.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Mvc.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Optimization.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Razor.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.WebPages.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.WebPages.Deployment.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.WebPages.Razor.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Antlr3.Runtime.pdb
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Google.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MVC\CPCPN\api.core\Api.App\bin\System.Web.Http.Owin.xml
+D:\MVC\CPCPN\api.core\Api.App\obj\Debug\Api.App.dll
+D:\MVC\CPCPN\api.core\Api.App\obj\Debug\Api.App.pdb
+D:\MVC\CPCPN\api.core\Api.App\obj\Debug\Api.App.csprojResolveAssemblyReference.cache
+E:\Project EMS\api.core\Api.App\bin\roslyn\csc.exe
+E:\Project EMS\api.core\Api.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Project EMS\api.core\Api.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Project EMS\api.core\Api.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Project EMS\api.core\Api.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Project EMS\api.core\Api.App\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Project EMS\api.core\Api.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Project EMS\api.core\Api.App\bin\roslyn\System.Collections.Immutable.dll
+E:\Project EMS\api.core\Api.App\bin\roslyn\System.Reflection.Metadata.dll
+E:\Project EMS\api.core\Api.App\bin\roslyn\vbc.exe
+E:\Project EMS\api.core\Api.App\bin\roslyn\VBCSCompiler.exe
+E:\Project EMS\api.core\Api.App\bin\roslyn\VBCSCompiler.exe.config
+E:\Project EMS\api.core\Api.App\bin\Api.App.dll.config
+E:\Project EMS\api.core\Api.App\bin\Api.App.dll
+E:\Project EMS\api.core\Api.App\bin\Api.App.pdb
+E:\Project EMS\api.core\Api.App\bin\Antlr3.Runtime.dll
+E:\Project EMS\api.core\Api.App\bin\Common.dll
+E:\Project EMS\api.core\Api.App\bin\EntityFramework.dll
+E:\Project EMS\api.core\Api.App\bin\EntityFramework.SqlServer.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Google.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Web.Infrastructure.dll
+E:\Project EMS\api.core\Api.App\bin\Newtonsoft.Json.dll
+E:\Project EMS\api.core\Api.App\bin\Owin.dll
+E:\Project EMS\api.core\Api.App\bin\System.Net.Http.Formatting.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Cors.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Helpers.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.Cors.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.Owin.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.WebHost.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Mvc.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Optimization.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.Razor.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.WebPages.Deployment.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.WebPages.dll
+E:\Project EMS\api.core\Api.App\bin\System.Web.WebPages.Razor.dll
+E:\Project EMS\api.core\Api.App\bin\WebGrease.dll
+E:\Project EMS\api.core\Api.App\bin\Common.pdb
+E:\Project EMS\api.core\Api.App\bin\EntityFramework.xml
+E:\Project EMS\api.core\Api.App\bin\EntityFramework.SqlServer.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Project EMS\api.core\Api.App\bin\System.Net.Http.Formatting.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.Cors.xml
+E:\Project EMS\api.core\Api.App\bin\Newtonsoft.Json.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Helpers.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.WebHost.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Mvc.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Optimization.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Razor.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.WebPages.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.WebPages.Deployment.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.WebPages.Razor.xml
+E:\Project EMS\api.core\Api.App\bin\Antlr3.Runtime.pdb
+E:\Project EMS\api.core\Api.App\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Google.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Project EMS\api.core\Api.App\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Project EMS\api.core\Api.App\bin\System.Web.Http.Owin.xml
+E:\Project EMS\api.core\Api.App\obj\Debug\Api.App.dll
+E:\Project EMS\api.core\Api.App\obj\Debug\Api.App.pdb
